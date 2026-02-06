@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CV Nina Rahayu - Portofolio Lucu</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600;700&family=Pangolin&display=swap" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/framer-motion/10.16.4/framer-motion.js"></script>
+    <style>
+        :root {
+            --primary-pink: #ffafcc;
+            --secondary-blue: #a2d2ff;
+            --soft-yellow: #ffed86;
+            --accent-purple: #cdb4db;
+        }
+
+        body {
+            font-family: 'Quicksand', sans-serif;
+            background-color: #f8f9fa;
+            scroll-behavior: smooth;
+        }
+
+        .font-handwritten {
+            font-family: 'Pangolin', cursive;
+        }
+
+        .blob {
+            position: absolute;
+            z-index: -1;
+            filter: blur(40px);
+            opacity: 0.6;
+            animation: move 10s infinite alternate;
+        }
+
+        @keyframes move {
+            from { transform: translate(0, 0); }
+            to { transform: translate(50px, 100px); }
+        }
+
+        .card-hover {
+            transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+        }
+
+        .card-hover:hover {
+            transform: scale(1.05) rotate(2deg);
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1);
+        }
+
+        .floating {
+            animation: floating 3s ease-in-out infinite;
+        }
+
+        @keyframes floating {
+            0% { transform: translateY(0px); }
+            50% { transform: translateY(-10px); }
+            100% { transform: translateY(0px); }
+        }
+
+        .custom-shape-divider-bottom-168 {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            overflow: hidden;
+            line-height: 0;
+            transform: rotate(180deg);
+        }
+
+        .custom-shape-divider-bottom-168 svg {
+            position: relative;
+            display: block;
+            width: calc(100% + 1.3px);
+            height: 80px;
+        }
+
+        .custom-shape-divider-bottom-168 .shape-fill {
+            fill: #ffffff;
+        }
+    </style>
+</head>
+<body class="overflow-x-hidden">
+
+    <!-- Animasi Latar Belakang -->
+    <div class="blob w-64 h-64 bg-pink-200 top-10 left-10 rounded-full"></div>
+    <div class="blob w-80 h-80 bg-blue-200 top-1/2 right-10 rounded-full" style="animation-delay: -2s;"></div>
+    <div class="blob w-72 h-72 bg-yellow-100 bottom-10 left-1/3 rounded-full" style="animation-delay: -5s;"></div>
+
+    <!-- Header / Hero Section -->
+    <section class="min-h-screen flex flex-col items-center justify-center p-6 text-center relative">
+        <div class="floating mb-8 relative">
+            <div class="w-48 h-48 md:w-64 md:h-64 rounded-full border-8 border-white shadow-2xl overflow-hidden bg-white mx-auto">
+                <!-- Fallback jika file gambar tidak terbaca -->
+                <img src="Gemini_Generated_Image_fmtr07fmtr07fmtr.png" alt="Nina Rahayu" class="w-full h-full object-cover" onerror="this.src='https://api.dicebear.com/7.x/avataaars/svg?seed=Nina'">
+            </div>
+            <div class="absolute -bottom-4 -right-4 bg-yellow-400 p-3 rounded-full shadow-lg transform rotate-12">
+                <span class="text-2xl">💪</span>
+            </div>
+        </div>
+
+        <h1 class="text-4xl md:text-6xl font-bold text-gray-800 mb-2 font-handwritten">Halo, Aku Nina! ✨</h1>
+        <p class="text-xl md:text-2xl text-pink-500 font-semibold mb-6">Atlit & Calon Bintang</p>
+        
+        <div class="flex gap-4 mb-10">
+            <a href="#about" class="bg-pink-400 hover:bg-pink-500 text-white px-8 py-3 rounded-full font-bold shadow-lg transition-transform active:scale-95">Kenalan Yuk!</a>
+            <a href="#contact" class="bg-blue-400 hover:bg-blue-500 text-white px-8 py-3 rounded-full font-bold shadow-lg transition-transform active:scale-95">Hubungi Aku</a>
+        </div>
+
+        <div class="custom-shape-divider-bottom-168">
+            <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120;0" preserveAspectRatio="none">
+                <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z" class="shape-fill"></path>
+            </svg>
+        </div>
+    </section>
+
+    <!-- Tentang Diri -->
+    <section id="about" class="py-20 bg-white">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl font-bold text-center text-gray-800 mb-12 font-handwritten">Tentang Diriku 🌸</h2>
+            <div class="grid md:grid-cols-2 gap-10 items-center">
+                <div class="bg-yellow-50 p-8 rounded-3xl border-4 border-dashed border-yellow-200 card-hover">
+                    <ul class="space-y-4 text-lg text-gray-700">
+                        <li><span class="font-bold text-yellow-600">Nama:</span> Nina Rahayu</li>
+                        <li><span class="font-bold text-yellow-600">Lahir:</span> 04 Juli 2008</li>
+                        <li><span class="font-bold text-yellow-600">Alamat:</span> Kp. Legokloa RT 01 / RW 08 Desa Langonsari</li>
+                        <li><span class="font-bold text-yellow-600">Hobby:</span> Memasak 🍳 (Suka eksperimen di dapur!)</li>
+                        <li><span class="font-bold text-yellow-600">Bahasa:</span> Bahasa Indonesia</li>
+                    </ul>
+                </div>
+                <div class="grid grid-cols-2 gap-4">
+                    <div class="bg-blue-100 p-6 rounded-2xl flex flex-col items-center text-center card-hover">
+                        <span class="text-4xl mb-2">🏋️‍♀️</span>
+                        <h3 class="font-bold">Keahlian</h3>
+                        <p class="text-sm">Atlit Angkat Besi</p>
+                    </div>
+                    <div class="bg-pink-100 p-6 rounded-2xl flex flex-col items-center text-center card-hover">
+                        <span class="text-4xl mb-2">🥁</span>
+                        <h3 class="font-bold">Organisasi</h3>
+                        <p class="text-sm">Ekskul Drumband</p>
+                    </div>
+                    <div class="bg-purple-100 p-6 rounded-2xl flex flex-col items-center text-center card-hover">
+                        <span class="text-4xl mb-2">🎓</span>
+                        <h3 class="font-bold">Edukasi</h3>
+                        <p class="text-sm">Lulusan SMP 2023</p>
+                    </div>
+                    <div class="bg-green-100 p-6 rounded-2xl flex flex-col items-center text-center card-hover">
+                        <span class="text-4xl mb-2">🏅</span>
+                        <h3 class="font-bold">Prestasi</h3>
+                        <p class="text-sm">Sertifikat Event</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pendidikan & Pengalaman -->
+    <section class="py-20 bg-blue-50 relative overflow-hidden">
+        <div class="container mx-auto px-6 relative z-10">
+            <div class="grid md:grid-cols-2 gap-12">
+                <!-- Timeline Pendidikan -->
+                <div>
+                    <h2 class="text-3xl font-bold mb-8 font-handwritten text-blue-700">Jejak Belajar 📚</h2>
+                    <div class="space-y-6">
+                        <div class="flex gap-4">
+                            <div class="bg-blue-400 w-12 h-12 rounded-full flex-shrink-0 flex items-center justify-center text-white font-bold">1</div>
+                            <div class="bg-white p-5 rounded-2xl shadow-sm border-l-8 border-blue-400 w-full">
+                                <h4 class="font-bold">SDN Sukasari Indah</h4>
+                                <p class="text-sm text-gray-500">Lulus Tahun 2019</p>
+                            </div>
+                        </div>
+                        <div class="flex gap-4">
+                            <div class="bg-blue-400 w-12 h-12 rounded-full flex-shrink-0 flex items-center justify-center text-white font-bold">2</div>
+                            <div class="bg-white p-5 rounded-2xl shadow-sm border-l-8 border-blue-400 w-full">
+                                <h4 class="font-bold">SMP Handayani 2 Pameungpeuk</h4>
+                                <p class="text-sm text-gray-500">Lulus Tahun 2023</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Pengalaman Organisasi -->
+                <div>
+                    <h2 class="text-3xl font-bold mb-8 font-handwritten text-pink-700">Pengalaman Seru 🎈</h2>
+                    <div class="bg-white p-6 rounded-3xl shadow-lg border-2 border-pink-200">
+                        <div class="flex items-center gap-4 mb-4">
+                            <div class="text-4xl">🥁</div>
+                            <div>
+                                <h4 class="text-xl font-bold">Drumband SD</h4>
+                                <p class="text-gray-600 italic">Mempelajari kedisiplinan dan kerjasama tim sejak dini melalui musik.</p>
+                            </div>
+                        </div>
+                        <div class="mt-6 border-t pt-4">
+                            <h4 class="font-bold text-gray-800 flex items-center gap-2">
+                                <span class="text-yellow-500">🏆</span> Prestasi Atlit
+                            </h4>
+                            <p class="text-gray-600 mt-2">
+                                Berhasil mengumpulkan berbagai <span class="font-bold text-pink-500">Sertifikat Pertandingan Angkat Besi</span> dari berbagai event kompetisi.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer / Kontak -->
+    <footer id="contact" class="py-20 bg-gray-800 text-white rounded-t-[50px]">
+        <div class="container mx-auto px-6 text-center">
+            <h2 class="text-4xl font-bold mb-4 font-handwritten">Ayo Berteman! 💌</h2>
+            <p class="mb-10 opacity-80 text-lg">Tertarik bekerja sama atau sekadar menyapa?</p>
+            
+            <div class="flex flex-wrap justify-center gap-6 mb-12">
+                <a href="tel:085951334170" class="flex items-center gap-3 bg-gray-700 px-6 py-4 rounded-2xl hover:bg-green-600 transition-colors">
+                    <span class="text-2xl">📞</span>
+                    <span class="font-bold">085951334170</span>
+                </a>
+                <a href="https://instagram.com/ninaraaayu" target="_blank" class="flex items-center gap-3 bg-gray-700 px-6 py-4 rounded-2xl hover:bg-pink-600 transition-colors">
+                    <span class="text-2xl">📸</span>
+                    <span class="font-bold">@ninaraaayu</span>
+                </a>
+            </div>
+
+            <div class="pt-8 border-t border-gray-700 text-sm opacity-50">
+                <p>&copy; 2024 Nina Rahayu. Dibuat dengan cinta & semangat atlit!</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Animasi muncul saat scroll sederhana
+        const observerOptions = {
+            threshold: 0.1
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('opacity-100');
+                    entry.target.classList.add('translate-y-0');
+                    entry.target.classList.remove('opacity-0');
+                    entry.target.classList.remove('translate-y-10');
+                }
+            });
+        }, observerOptions);
+
+        // Menambahkan kelas awal untuk animasi
+        document.querySelectorAll('section').forEach(section => {
+            section.classList.add('transition-all', 'duration-1000', 'opacity-0', 'translate-y-10');
+            observer.observe(section);
+        });
+
+        // Paksa hero section muncul langsung
+        const hero = document.querySelector('section');
+        hero.classList.remove('opacity-0', 'translate-y-10');
+        hero.classList.add('opacity-100', 'translate-y-0');
+    </script>
+</body>
+</html>
